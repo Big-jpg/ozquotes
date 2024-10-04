@@ -89,12 +89,7 @@ export function LandingPageComponent() {
                             <CardContent className="p-6">
                                 <div className="flex items-center justify-center mb-4">
                                     {[...Array(5)].map((_, i) => (
-                                        <Star
-                                            key={i}
-                                            className={`w-5 h-5 ${
-                                                i < testimonial.rating ? "text-yellow-400" : "text-gray-300"
-                                            }`}
-                                        />
+                                        <Star key={i} className={`w-5 h-5 ${i < testimonial.rating ? 'text-yellow-400' : 'text-gray-300'}`} />
                                     ))}
                                 </div>
                                 <p className="text-gray-600">{testimonial.text}</p>
