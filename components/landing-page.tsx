@@ -1,59 +1,4 @@
-"use client";
-
-import { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import Link from "next/link";
-import { Star, Brain, Gift, BarChart, Database } from "lucide-react";
-
-const testimonials = [
-    {
-        name: "Sarah Johnson",
-        rating: 5,
-        text: "Oz Quotes made it so easy to get multiple quotes for my solar panel installation. Saved me time and money!"
-    },
-    {
-        name: "Michael Lee",
-        rating: 4,
-        text: "Great service! I got competitive quotes for my home battery system within hours."
-    },
-    {
-        name: "Emma Wilson",
-        rating: 5,
-        text: "The referral program is fantastic. I saved 10% on my heat pump installation by referring friends!"
-    }
-];
-
-const features = [
-    {
-        icon: <Gift className="w-12 h-12 text-primary" />,
-        title: "Rewards for Information",
-        description: "The more details you provide, the better your quotes. We reward your thoroughness with exclusive discounts."
-    },
-    {
-        icon: <Brain className="w-12 h-12 text-primary" />,
-        title: "AI-Powered Insights",
-        description: "Our AI analyzes thousands of quotes to provide you with the most accurate and competitive pricing."
-    },
-    {
-        icon: <Database className="w-12 h-12 text-primary" />,
-        title: "Comprehensive Database",
-        description: "Access a vast database of quotes from top-rated providers."
-    },
-    {
-        icon: <BarChart className="w-12 h-12 text-primary" />,
-        title: "Advanced Analytics",
-        description: "Benefit from detailed analytics to make informed decisions."
-    }
-];
-
 export function LandingPageComponent() {
-    const [isVisible, setIsVisible] = useState(false);
-
-    useEffect(() => {
-       // setIsVisible(true);
-    }, []);
-
     return (
         <div>
             <section className="hero-section text-center py-12 bg-gray-100">
@@ -95,7 +40,12 @@ export function LandingPageComponent() {
                             <CardContent className="p-6">
                                 <div className="flex items-center justify-center mb-4">
                                     {[...Array(5)].map((_, i) => (
-                                        <Star key={i} className={`w-5 h-5 ${i < testimonial.rating ? 'text-yellow-400' : 'text-gray-300'}`} />
+                                        <Star
+                                            key={i}
+                                            className={`w-5 h-5 ${
+                                                i < testimonial.rating ? "text-yellow-400" : "text-gray-300"
+                                            }`}
+                                        />
                                     ))}
                                 </div>
                                 <p className="text-gray-600">{testimonial.text}</p>
