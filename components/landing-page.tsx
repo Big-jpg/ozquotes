@@ -51,7 +51,7 @@ export function LandingPageComponent() {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
-        setIsVisible(true);
+       // setIsVisible(true);
     }, []);
 
     return (
