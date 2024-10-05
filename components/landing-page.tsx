@@ -6,98 +6,98 @@ import Link from "next/link";
 import { Star, Brain, Gift, BarChart, Database } from "lucide-react";
 
 const testimonials = [
-    {
-        name: "Sarah Johnson",
-        rating: 5,
-        text: "Oz Quotes made it so easy to get multiple quotes for my solar panel installation. Saved me time and money!"
-    },
-    {
-        name: "Michael Lee",
-        rating: 4,
-        text: "Great service! I got competitive quotes for my home battery system within hours."
-    },
-    {
-        name: "Emma Wilson",
-        rating: 5,
-        text: "The referral program is fantastic. I saved 10% on my heat pump installation by referring friends!"
-    }
+  {
+    name: "Dave from Perth",
+    rating: 5,
+    text: "Was a bit suss about getting solar at first, but Oz Quotes made it dead easy. Got a few quotes and saved a packet!"
+  },
+  {
+    name: "Shazza from Adelaide",
+    rating: 4,
+    text: "Needed a new hot water system and didn't know where to start. These guys sorted me out with some good options. Cheers!"
+  },
+  {
+    name: "Johnno from Brissy",
+    rating: 5,
+    text: "Told me mate about Oz Quotes after I got my aircon sorted. He got a good deal too, and I scored some cash back. Bonza!"
+  }
 ];
 
 const features = [
-    {
-        icon: <Gift className="w-12 h-12 text-primary" />,
-        title: "Rewards for Information",
-        description: "The more details you provide, the better your quotes. We reward your thoroughness with exclusive discounts."
-    },
-    {
-        icon: <Brain className="w-12 h-12 text-primary" />,
-        title: "AI-Powered Insights",
-        description: "Our AI analyzes thousands of quotes to provide you with the most accurate and competitive pricing."
-    },
-    {
-        icon: <Database className="w-12 h-12 text-primary" />,
-        title: "Comprehensive Database",
-        description: "Access a vast database of quotes from top-rated providers."
-    },
-    {
-        icon: <BarChart className="w-12 h-12 text-primary" />,
-        title: "Advanced Analytics",
-        description: "Benefit from detailed analytics to make informed decisions."
-    }
+  {
+    icon: <Gift className="w-8 h-8 sm:w-12 sm:h-12 text-primary" />,
+    title: "Share More, Save More",
+    description: "The more you tell us, the better the deals. Plus, you'll snag some ripper discounts!"
+  },
+  {
+    icon: <Brain className="w-8 h-8 sm:w-12 sm:h-12 text-primary" />,
+    title: "Smart Quote Finder",
+    description: "Our clever system sifts through loads of quotes to find you the best bang for your buck."
+  },
+  {
+    icon: <Database className="w-8 h-8 sm:w-12 sm:h-12 text-primary" />,
+    title: "Heaps of Options",
+    description: "We've got a massive list of top-notch providers for you to choose from."
+  },
+  {
+    icon: <BarChart className="w-8 h-8 sm:w-12 sm:h-12 text-primary" />,
+    title: "Easy Comparisons",
+    description: "We break down the info so you can make the best choice, no worries!"
+  }
 ];
 
 export function LandingPageComponent() {
-    return (
-        <div>
-            <section className="hero-section text-center py-12 bg-gray-100">
-                <h1 className="text-4xl font-bold">Welcome to Oz Quotes</h1>
-                <p className="mt-4 text-lg text-gray-600">
-                    Discover the best energy upgrade quotes, powered by AI and advanced analytics.
-                </p>
-                <div className="mt-6">
-                    <Link href="/search-quotes">
-                        <Button variant="default" size="lg">
-                            Start Searching for Quotes
-                        </Button>
-                    </Link>
-                </div>
-            </section>
-
-            {/* Features Section */}
-            <section className="py-12">
-                <h2 className="text-2xl font-bold text-center">Our Features</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-                    {features.map((feature, index) => (
-                        <Card key={index}>
-                            <CardContent className="p-6 text-center">
-                                {feature.icon}
-                                <h3 className="text-xl font-semibold mt-4">{feature.title}</h3>
-                                <p className="text-gray-600 mt-2">{feature.description}</p>
-                            </CardContent>
-                        </Card>
-                    ))}
-                </div>
-            </section>
-
-            {/* Testimonials Section */}
-            <section className="py-12 bg-gray-50">
-                <h2 className="text-2xl font-bold text-center">What Our Users Say</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-                    {testimonials.map((testimonial, index) => (
-                        <Card key={index}>
-                            <CardContent className="p-6">
-                                <div className="flex items-center justify-center mb-4">
-                                    {[...Array(5)].map((_, i) => (
-                                        <Star key={i} className={`w-5 h-5 ${i < testimonial.rating ? 'text-yellow-400' : 'text-gray-300'}`} />
-                                    ))}
-                                </div>
-                                <p className="text-gray-600">{testimonial.text}</p>
-                                <p className="mt-2 font-semibold text-gray-900">{testimonial.name}</p>
-                            </CardContent>
-                        </Card>
-                    ))}
-                </div>
-            </section>
+  return (
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="hero-section text-center py-8 sm:py-12 bg-gray-100 rounded-lg">
+        <h1 className="text-4xl font-bold mb-8">G'day! Welcome to Oz Quotes</h1>
+        <p className="mt-4 text-base sm:text-lg text-gray-600">
+          Find the best deals on energy upgrades for your home, quick and easy!
+        </p>
+        <div className="mt-6">
+          <Link href="/search-quotes">
+            <Button variant="default" size="lg" className="w-full sm:w-auto">
+              Start Your Quote Search
+            </Button>
+          </Link>
         </div>
-    );
+      </section>
+
+      {/* Features Section */}
+      <section className="py-8 sm:py-12">
+        <h2 className="text-3xl font-bold text-center mb-8">Why Oz Quotes is Ace</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6 sm:mt-8">
+          {features.map((feature, index) => (
+            <Card key={index}>
+              <CardContent className="p-4 sm:p-6 text-center">
+                <div className="flex justify-center">{feature.icon}</div>
+                <h3 className="text-xl font-bold mt-3 sm:mt-4">{feature.title}</h3>
+                <p className="text-sm sm:text-base text-muted-foreground mt-2">{feature.description}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-8 sm:py-12 bg-gray-50 rounded-lg">
+        <h2 className="text-3xl font-bold text-center mb-8">What Our Mates Say</h2>
+        <div className="grid grid-cols-1 gap-6 mt-6 sm:mt-8">
+          {testimonials.map((testimonial, index) => (
+            <Card key={index}>
+              <CardContent className="p-4 sm:p-6">
+                <div className="flex items-center justify-center mb-3 sm:mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className={`w-4 h-4 sm:w-5 sm:h-5 ${i < testimonial.rating ? 'text-yellow-400' : 'text-gray-300'}`} />
+                  ))}
+                </div>
+                <p className="text-sm sm:text-base text-muted-foreground">{testimonial.text}</p>
+                <p className="mt-2 font-semibold text-gray-900 text-sm sm:text-base">{testimonial.name}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
 }
