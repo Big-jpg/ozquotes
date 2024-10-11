@@ -1,6 +1,9 @@
 import './globals.css';
-import Navbar from '@/components/ui/navbar';
+import Header from '@/app/components/Header';
+import Footer from '@/app/components/Footer';
 import { ReactNode } from 'react';
+
+
 
 // Define the metadata using the Metadata API
 export const metadata = {
@@ -31,18 +34,20 @@ export const metadata = {
   },
 };
 
-// Define the type for children prop
-interface RootLayoutProps {
-  children: ReactNode;
-}
-
-export default function RootLayout({ children }: RootLayoutProps) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
-      <body>
-        <Navbar />
-        {children}
+      <body >
+        <Header />
+        <main className="container mx-auto p-4">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
-  );
+  )
 }

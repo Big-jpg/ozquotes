@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export default function SearchQuotes() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -45,6 +46,18 @@ export default function SearchQuotes() {
                 ) : (
                     <p className="text-center">No results found. Please try searching with a different term.</p>
                 )}
+            </div>
+            <br />
+            <div className="flex justify-center">
+                <Link href="/">
+                    <Button
+                        variant="default"
+                        size="lg"
+                        className="bg-black hover:bg-[#5fd0c7] text-white hover:text-black transition-colors duration-300"
+                    >
+                        Back to Home
+                    </Button>
+                </Link>
             </div>
         </div>
     );
