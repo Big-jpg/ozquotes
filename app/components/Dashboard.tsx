@@ -1,21 +1,12 @@
-import Image from "next/image";
 import Link from "next/link";
 import {
     ChevronLeft,
     ChevronRight,
     Copy,
-    CreditCard,
     File,
-    Home,
-    LineChart,
     ListFilter,
     MoreVertical,
-    Package,
-    PanelLeft,
-    Settings,
     Hammer,
-    Truck,
-    Users2,
 } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
@@ -45,7 +36,7 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Input } from "@/components/ui/input";
+
 import {
     Pagination,
     PaginationContent,
@@ -53,7 +44,6 @@ import {
 } from "@/components/ui/pagination";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import {
     Table,
     TableBody,
@@ -68,12 +58,6 @@ import {
     TabsList,
     TabsTrigger,
 } from "@/components/ui/tabs";
-import {
-    Tooltip,
-    TooltipContent,
-    TooltipTrigger,
-    TooltipProvider,
-} from "@/components/ui/tooltip";
 
 export const description =
     "A construction and renovation service dashboard with a sidebar navigation. The sidebar has icon navigation. The content area has a breadcrumb. The main area has a list of recent projects with a filter and export button. The main area also has a detailed view of a single project with project details, contractor information, client information, and payment information.";
