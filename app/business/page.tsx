@@ -17,7 +17,7 @@ export default function ListBusinessPage() {
             size="lg" 
             className="bg-black hover:bg-[#5fd0c7] text-white hover:text-black transition-colors duration-300"
           >
-            Back to Home
+            Back to Home 
           </Button>
         </Link>
       </div>
