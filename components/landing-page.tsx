@@ -173,4 +173,4 @@ export function Home() {
 }
 
 // LandingPageComponent (You can now export About, Home, and LandingPageComponent separately)
-export default About;
+export default LandingPageComponent;
