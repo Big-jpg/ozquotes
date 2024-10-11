@@ -1,5 +1,7 @@
 import * as React from "react"
 
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import { cn } from "@/lib/utils"
 
 export interface InputProps
