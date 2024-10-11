@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 
 // About Component
-function About() {
+function LandingPageComponent() {
   const [isMissionExpanded, setIsMissionExpanded] = useState(false);
 
   const toggleMission = () => {
