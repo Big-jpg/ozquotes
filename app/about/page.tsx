@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button"
 import { ChevronDown, ChevronUp, Brain, Gift, Database, BarChart, Zap } from "lucide-react"
 
 export default function About() {
-<<<<<<< HEAD
     const [isMissionExpanded, setIsMissionExpanded] = useState(false)
 
     const toggleMission = () => {
@@ -28,7 +27,7 @@ export default function About() {
     const reasons = [
         {
             icon: <Brain className="w-8 h-8 text-primary mb-4" />,
-            title: "Fair Dinkum Comparisons",
+            title: "Fair Comparisons",
             description: "Our smart system crunches the numbers to find you the best deal. No bias, no hidden fees - just honest, competitive quotes."
         },
         {
@@ -143,46 +142,6 @@ export default function About() {
             </div>
         </div>
     )
-=======
-  const [isMissionExpanded, setIsMissionExpanded] = useState(false)
-
-  const toggleMission = () => {
-    setIsMissionExpanded(!isMissionExpanded)
-  }
-
-  const mission = {
-    title: "Our Mission",
-    content: "We're on a mission to make energy upgrades easy and affordable for every Aussie homeowner. No more confusing quotes or endless phone calls. We do the hard yakka for you, so you can sit back, relax, and watch the savings roll in."
-  }
-
-  const easyAs = {
-    icon: <Zap className="w-8 h-8 text-primary mr-3" />,
-    title: "Easy as",
-    description: "Our website is a piece of cake to use. No tech degree required - just answer a few questions, and we'll do the rest."
-  }
-
-  const reasons = [
-    { 
-      icon: <Brain className="w-8 h-8 text-primary mb-4" />,
-      title: "Fair Dinkum Comparisons", 
-      description: "Our smart system crunches the numbers to find you the best deal. No bias, no hidden fees - just honest, competitive quotes." 
-    },
-    { 
-      icon: <Database className="w-8 h-8 text-primary mb-4" />,
-      title: "Your Data, Your Rules", 
-      description: "We're crystal clear about how we use your info. It's only for getting you better quotes, and we never flog it off to others." 
-    },
-    { 
-      icon: <Gift className="w-8 h-8 text-primary mb-4" />,
-      title: "Share More, Save More", 
-      description: "The more details you give us about your home and energy needs, the better deals we can find. Plus, you'll earn rewards for being thorough!" 
-    },
-    { 
-      icon: <BarChart className="w-8 h-8 text-primary mb-4" />,
-      title: "Refer a Mate, Get Paid", 
-      description: "Know someone who could use cheaper energy? Refer them to us, and we'll give you a fair go of the savings. It's our way of saying thanks for spreading the word." 
-    },
-  ]
 
   return (
     <div className="container mx-auto py-12 px-4 md:px-6 text-center">
@@ -279,5 +238,4 @@ export default function About() {
       </div>
     </div>
   )
->>>>>>> 4d105d1dedf754a5a994cc3c873a7bd78cd0c746
 }
