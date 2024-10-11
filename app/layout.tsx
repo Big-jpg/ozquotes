@@ -1,8 +1,6 @@
 import './globals.css';
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
-import { ReactNode } from 'react';
-
 
 
 // Define the metadata using the Metadata API

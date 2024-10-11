@@ -14,7 +14,8 @@ import {
   Zap,
 } from "lucide-react";
 
-export default function About() {
+// About Component
+function About() {
   const [isMissionExpanded, setIsMissionExpanded] = useState(false);
 
   const toggleMission = () => {
@@ -161,3 +162,15 @@ export default function About() {
     </div>
   );
 }
+
+// Home Component
+export function Home() {
+  return (
+    <div>
+      <LandingPageComponent />
+    </div>
+  );
+}
+
+// LandingPageComponent (You can now export About, Home, and LandingPageComponent separately)
+export default About;
