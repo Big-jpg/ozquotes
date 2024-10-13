@@ -12,7 +12,7 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 const Header: React.FC = () => {
     return (
-        <header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
+        <header className="sticky top-0 z-50 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
             {/* Desktop Navigation */}
             <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
                 <Link href="/" className="flex items-center gap-2 text-lg font-semibold md:text-base">
@@ -24,6 +24,9 @@ const Header: React.FC = () => {
                 </Link>
                 <Link href="/projects" className="text-muted-foreground transition-colors hover:text-foreground">
                     Projects
+                </Link>
+                <Link href="/renovate" className="text-muted-foreground transition-colors hover:text-foreground">
+                    Renovate
                 </Link>
                 <Link href="/companies" className="text-muted-foreground transition-colors hover:text-foreground">
                     Companies
@@ -55,6 +58,9 @@ const Header: React.FC = () => {
                         </Link>
                         <Link href="/projects" className="text-muted-foreground hover:text-foreground">
                             Projects
+                        </Link>
+                        <Link href="/renovate" className="text-muted-foreground hover:text-foreground">
+                            Renovate
                         </Link>
                         <Link href="/companies" className="text-muted-foreground hover:text-foreground">
                             Companies

@@ -16,7 +16,7 @@ export const metadata = {
       {
         url: '/images/ogImageHeader.png',
         width: 937,
-        height: 370,
+        height: 447,
         alt: 'Oz Quotes OG Image',
       },
     ],
